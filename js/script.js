@@ -1,5 +1,6 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+let score = 0;
 
 const jump = () => {
     mario.classList.add('jump');
@@ -30,6 +31,11 @@ if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
         clearInterval(loop);
     }
 
+    score += 2;
+    document.getElementById('output-score').innerHTML = "Score: " + score;
+
 }, 10)
+
+
 
 document.addEventListener('keydown', jump);
