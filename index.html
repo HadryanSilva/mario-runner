@@ -2,20 +2,17 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <title>Mario Runner Game</title>
         <link rel="stylesheet" href="./css/style.css">
-        <script src="./js/script.js" defer></script>
-
-        <title>Mario Jump</title>
+        <script src="./js/menu.js" defer></script>
     </head>
     <body>
-        
-        <div class="game-board">
+        <div class="container">
             <img src="./images/clouds.png" class="clouds">
             <img src="./images/pipe.png" class="pipe">
-            <img src="./images/mario.gif" class="mario">
+            <div class="menu">
+                <button type="button" class="solid" onclick="play()"><h1>PLAY</h1></button>              
+            </div>
         </div>
-        <span id="output-score" class="score"></span>
     </body>
 </html>
